@@ -1,0 +1,14 @@
+{
+  "name": "wahat-al-qamar",
+  "version": "1.0.0",
+  "description": "WAHAT AL QAMAR — Premium Trailer Base Manufacturing, UAE",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^6.2.0"
+  }
+}

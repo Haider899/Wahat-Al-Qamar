@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 768 768" width="100" height="100">
+  <!-- Black background -->
+  <rect width="768" height="768" fill="#000000"/>
+  
+  <!-- Antelope head -->
+  <g id="antelope">
+    <!-- Horns -->
+    <path d="M 320 150 Q 300 100 280 80" stroke="#FFB700" stroke-width="12" fill="none" stroke-linecap="round"/>
+    <path d="M 448 150 Q 468 100 488 80" stroke="#FFB700" stroke-width="12" fill="none" stroke-linecap="round"/>
+    
+    <!-- Head -->
+    <ellipse cx="384" cy="220" rx="70" ry="85" fill="#FFB700"/>
+    
+    <!-- Snout -->
+    <ellipse cx="384" cy="280" rx="50" ry="40" fill="#E6A500"/>
+    
+    <!-- Eyes -->
+    <circle cx="365" cy="200" r="8" fill="#000000"/>
+    <circle cx="403" cy="200" r="8" fill="#000000"/>
+    <circle cx="366" cy="198" r="3" fill="#FFFFFF"/>
+    <circle cx="404" cy="198" r="3" fill="#FFFFFF"/>
+    
+    <!-- Ears -->
+    <ellipse cx="340" cy="160" rx="15" ry="35" fill="#FFB700" transform="rotate(-25 340 160)"/>
+    <ellipse cx="428" cy="160" rx="15" ry="35" fill="#FFB700" transform="rotate(25 428 160)"/>
+    
+    <!-- Neck -->
+    <rect x="365" y="300" width="38" height="80" fill="#FFB700"/>
+    
+    <!-- Body -->
+    <rect x="300" y="380" width="168" height="150" rx="20" fill="#FFB700"/>
+    
+    <!-- Legs -->
+    <rect x="320" y="520" width="25" height="100" rx="12" fill="#FFB700"/>
+    <rect x="360" y="520" width="25" height="100" rx="12" fill="#FFB700"/>
+    <rect x="400" y="520" width="25" height="100" rx="12" fill="#FFB700"/>
+    <rect x="440" y="520" width="25" height="100" rx="12" fill="#FFB700"/>
+    
+    <!-- Tail -->
+    <path d="M 450 430 Q 500 400 520 350" stroke="#FFB700" stroke-width="15" fill="none" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Truck -->
+  <g id="truck">
+    <!-- Truck body -->
+    <rect x="150" y="420" width="280" height="120" rx="10" fill="#FFB700"/>
+    
+    <!-- Truck cabin -->
+    <rect x="150" y="380" width="80" height="50" rx="8" fill="#E6A500"/>
+    
+    <!-- Windshield -->
+    <rect x="160" y="385" width="55" height="30" rx="4" fill="#87CEEB" opacity="0.7"/>
+    
+    <!-- Front wheel -->
+    <circle cx="190" cy="550" r="25" fill="#333333"/>
+    <circle cx="190" cy="550" r="18" fill="#666666"/>
+    
+    <!-- Back wheels -->
+    <circle cx="300" cy="555" r="28" fill="#333333"/>
+    <circle cx="300" cy="555" r="20" fill="#666666"/>
+    <circle cx="380" cy="555" r="28" fill="#333333"/>
+    <circle cx="380" cy="555" r="20" fill="#666666"/>
+    
+    <!-- Truck details -->
+    <rect x="160" y="450" width="20" height="30" fill="#FF6B6B" opacity="0.8"/>
+  </g>
+  
+  <!-- Company name -->
+  <text x="384" y="680" font-family="Arial, sans-serif" font-size="48" font-weight="bold" fill="#FFB700" text-anchor="middle">WAHAT AL-QAMAR</text>
+  <text x="384" y="720" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#FFB700" text-anchor="middle">TURNING ENG LLC</text>
+</svg>
