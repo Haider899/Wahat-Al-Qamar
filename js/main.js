@@ -13,7 +13,7 @@ const HERO_BG = {
 };
 
 /** Rotating headlines only (same background) */
-const HERO_SLIDES = [
+const HERO_SLIDES_EN = [
   {
     eyebrow: 'In-House Fabrication · UAE',
     line1: 'Precision',
@@ -40,6 +40,161 @@ const HERO_SLIDES = [
   },
 ];
 
+const HERO_SLIDES_AR = [
+  {
+    eyebrow: 'تصنيع داخلي · الإمارات',
+    line1: 'دقة',
+    line2a: 'لحام',
+    line2b: 'قواعد المقطورات',
+    line3: 'تصنع في دبي',
+    desc: 'لحام القوس، والعوارض العرضية، والعوارض الرئيسية — كل شاسيه من واحة القمر يبدأ من أرضية مصنعنا.',
+  },
+  {
+    eyebrow: 'جبل علي · اللحام والإنتاج',
+    line1: 'خبرة',
+    line2a: 'في اللحام',
+    line2b: 'والتصنيع',
+    line3: 'لكل قاعدة',
+    desc: 'تصنيع مباشر داخل الورشة مع فنيين محترفين — مبني لأساطيل البناء والخدمات اللوجستية الثقيلة في الخليج.',
+  },
+  {
+    eyebrow: 'قواعد المقطورات · الإمارات',
+    line1: 'قوة',
+    line2a: 'يمكنك',
+    line2b: 'الاعتماد عليها',
+    line3: 'في كل رحلة',
+    desc: 'من الإطار الفولاذي إلى الشاسيه الجاهز للطريق — قواعد مقطورات بجودة تصدير وتسليم حسب جدولك.',
+  },
+];
+
+const TRANSLATIONS = {
+  en: {
+    'nav.home': 'Home',
+    'nav.about': 'About',
+    'nav.products': 'Products',
+    'nav.capabilities': 'Capabilities',
+    'nav.projects': 'Projects',
+    'nav.reviews': 'Reviews',
+    'nav.contact': 'Contact',
+    'nav.quote': 'Get Quote',
+    'hero.explore': 'Explore Products',
+    'hero.viewProjects': 'View Projects',
+    'hero.statYears': '+ Years Experience',
+    'hero.statDelivered': '+ Trailers Delivered',
+    'hero.statCategories': 'Trailer Categories',
+    'trust.label': 'Trusted across UAE & GCC',
+    'trust.flatbed': 'Flatbed Trailers',
+    'trust.lowbed': 'Lowbed Chassis',
+    'trust.aframe': 'A-Frame Trailers',
+    'trust.skeleton': 'Skeleton Trailers',
+    'trust.curtain': 'Curtain Side',
+    'trust.box': 'Box Trailers',
+    'trust.convertible': 'Convertible Lowbed',
+    'trust.custom': 'Custom Fabrication',
+    'tag.flatbed': 'Flatbed',
+    'gallery.flatbedChassisTitle': 'Flatbed Chassis Base',
+    'gallery.flatbedChassisDesc': 'High-durability trailer chassis with premium steel fabrication, ready for GCC routes.',
+    'reviews.label': 'Customer Reviews',
+    'reviews.title': 'Trusted by Heavy Transport Teams',
+    'reviews.desc': 'Feedback from fleet operators, contractors, and logistics teams who rely on WAHAT AL QAMAR trailer bases.',
+    'reviews.fmRole': 'Fleet Manager',
+    'reviews.fmCompany': 'Heavy Logistics, Dubai',
+    'reviews.fmQuote': '"The chassis build quality and delivery updates were excellent. The team understood our payload requirements and delivered a road-ready platform on schedule."',
+    'reviews.fmChip': 'Lowbed Fleet',
+    'reviews.cpRole': 'Construction Partner',
+    'reviews.cpCompany': 'Precast Transport, UAE',
+    'reviews.cpQuote': '"Strong welding, clean finishing, and practical engineering. Their workshop team helped us finalize custom dimensions without slowing the project timeline."',
+    'reviews.cpChip': 'Custom Fabrication',
+    'reviews.loRole': 'Logistics Operator',
+    'reviews.loCompany': 'GCC Route Operations',
+    'reviews.loQuote': '"The flatbed base performed well on demanding routes. Good communication, solid materials, and a professional handover from inspection to delivery."',
+    'reviews.loChip': 'Flatbed Base',
+    'reviews.metricResponse': 'Quote Response',
+    'reviews.metricQC': 'Before Delivery',
+    'reviews.metricBuilt': 'Built Locally',
+  },
+  ar: {
+    'nav.home': 'الرئيسية',
+    'nav.about': 'من نحن',
+    'nav.products': 'المنتجات',
+    'nav.capabilities': 'قدراتنا',
+    'nav.projects': 'مشاريعنا',
+    'nav.reviews': 'الآراء',
+    'nav.contact': 'اتصل بنا',
+    'nav.quote': 'طلب تسعيرة',
+    'hero.explore': 'اكتشف المنتجات',
+    'hero.viewProjects': 'عرض المشاريع',
+    'hero.statYears': '+ سنوات خبرة',
+    'hero.statDelivered': '+ مقطورة تم تسليمها',
+    'hero.statCategories': 'فئات المقطورات',
+    'trust.label': 'موضع ثقة في الإمارات والخليج',
+    'trust.flatbed': 'مقطورات مسطحة',
+    'trust.lowbed': 'شاسيه منخفض',
+    'trust.aframe': 'مقطورات A-Frame',
+    'trust.skeleton': 'مقطورات هيكلية',
+    'trust.curtain': 'مقطورات ذات جوانب ستائرية',
+    'trust.box': 'مقطورات صندوقية',
+    'trust.convertible': 'مقطورات منخفضة قابلة للتحويل',
+    'trust.custom': 'تصنيع حسب الطلب',
+    'tag.flatbed': 'مسطحة',
+    'gallery.flatbedChassisTitle': 'قاعدة شاسيه مقطورة مسطحة',
+    'gallery.flatbedChassisDesc': 'شاسيه مقطورة عالي المتانة مع تصنيع فولاذي ممتاز، جاهز للطرق في الخليج.',
+    'reviews.label': 'آراء العملاء',
+    'reviews.title': 'موضع ثقة فرق النقل الثقيل',
+    'reviews.desc': 'آراء مشغلي الأساطيل، والمقاولين، وفرق الخدمات اللوجستية الذين يعتمدون على قواعد مقطورات واحة القمر.',
+    'reviews.fmRole': 'مدير الأسطول',
+    'reviews.fmCompany': 'الخدمات اللوجستية الثقيلة، دبي',
+    'reviews.fmQuote': '"جودة تصنيع الشاسيه وتحديثات التسليم كانت ممتازة. تفهم الفريق متطلبات الحمولة لدينا وسلموا قاعدة جاهزة للطريق في الوقت المحدد."',
+    'reviews.fmChip': 'أسطول المقطورات المنخفضة',
+    'reviews.cpRole': 'شريك البناء',
+    'reviews.cpCompany': 'نقل الخرسانة الجاهزة، الإمارات',
+    'reviews.cpQuote': '"لحام قوي، تشطيب نظيف، وهندسة عملية. ساعدنا فريق الورشة في تحديد الأبعاد المخصصة دون إبطاء الجدول الزمني للمشروع."',
+    'reviews.cpChip': 'تصنيع مخصص',
+    'reviews.loRole': 'مشغل الخدمات اللوجستية',
+    'reviews.loCompany': 'عمليات مسارات الخليج',
+    'reviews.loQuote': '"قدمت القاعدة المسطحة أداءً ممتازاً في الطرق الصعبة. تواصل جيد، مواد متينة، وتسليم احترافي من الفحص إلى الشحن."',
+    'reviews.loChip': 'قاعدة مسطحة',
+    'reviews.metricResponse': 'الرد على التسعيرة',
+    'reviews.metricQC': 'فحص الجودة قبل التسليم',
+    'reviews.metricBuilt': 'صنع محلياً في الإمارات',
+  }
+};
+
+let currentLang = localStorage.getItem('wahatLang') || 'en';
+const getHeroSlides = () => (currentLang === 'ar' ? HERO_SLIDES_AR : HERO_SLIDES_EN);
+
+function updateTranslations() {
+  $$('[data-i18n]').forEach((el) => {
+    const key = el.dataset.i18n;
+    const translation = TRANSLATIONS[currentLang]?.[key];
+    if (translation) {
+      el.textContent = translation;
+    }
+  });
+
+  document.documentElement.lang = currentLang;
+  document.documentElement.dir = currentLang === 'ar' ? 'rtl' : 'ltr';
+  document.body.classList.toggle('rtl', currentLang === 'ar');
+
+  const toggleBtn = $('#langToggle');
+  if (toggleBtn) {
+    toggleBtn.textContent = currentLang === 'ar' ? 'EN' : 'AR';
+    toggleBtn.setAttribute('aria-label', currentLang === 'ar' ? 'Switch to English' : 'Switch to Arabic');
+    toggleBtn.setAttribute('aria-pressed', currentLang === 'ar' ? 'true' : 'false');
+  }
+}
+
+function toggleLanguage() {
+  currentLang = currentLang === 'en' ? 'ar' : 'en';
+  localStorage.setItem('wahatLang', currentLang);
+  updateTranslations();
+  
+  const currentSlides = getHeroSlides();
+  if (currentSlides && currentSlides[heroIndex]) {
+    animateHeroText(currentSlides[heroIndex]);
+  }
+}
+
 let heroIndex = 0;
 let heroTimer = null;
 let heroProgressTween = null;
@@ -64,7 +219,7 @@ function initHeroSlideshow() {
   el.setAttribute('aria-label', HERO_BG.imageAlt);
   container.appendChild(el);
 
-  HERO_SLIDES.forEach((_, i) => {
+  getHeroSlides().forEach((_, i) => {
     const dot = document.createElement('button');
     dot.type = 'button';
     dot.className = `hero-dot${i === 0 ? ' active' : ''}`;
@@ -81,7 +236,7 @@ function startHeroAutoplay() {
   clearInterval(heroTimer);
   resetHeroProgress();
   heroTimer = setInterval(() => {
-    goToHeroSlide((heroIndex + 1) % HERO_SLIDES.length);
+    goToHeroSlide((heroIndex + 1) % getHeroSlides().length);
   }, HERO_INTERVAL);
 }
 
@@ -99,7 +254,7 @@ function resetHeroProgress() {
 
 function goToHeroSlide(index, manual = false) {
   if (index === heroIndex && manual) return;
-  const data = HERO_SLIDES[index];
+  const data = getHeroSlides()[index];
   if (!data) return;
 
   $$('.hero-dot').forEach((d, i) => d.classList.toggle('active', i === index));
@@ -613,6 +768,10 @@ function applyConfig() {
 
 /* ── Init ── */
 document.addEventListener('DOMContentLoaded', () => {
+  updateTranslations();
+  const toggleBtn = $('#langToggle');
+  toggleBtn?.addEventListener('click', toggleLanguage);
+
   applyConfig();
   initHeroSlideshow();
   initLoader();
