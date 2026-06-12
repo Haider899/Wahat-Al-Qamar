@@ -1,6 +1,10 @@
 /**
  * WAHAT AL QAMAR — Motion & interactions
  */
+import CONFIG from '../config.js';
+
+// Make CONFIG globally available
+window.CONFIG = CONFIG;
 const $ = (sel, ctx = document) => ctx.querySelector(sel);
 const $$ = (sel, ctx = document) => [...ctx.querySelectorAll(sel)];
 
