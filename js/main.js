@@ -1,7 +1,7 @@
 /**
  * WAHAT AL QAMAR — Motion & interactions
  */
-import CONFIG from '../config.js';
+import CONFIG from '/config.js';
 
 // Make CONFIG globally available
 window.CONFIG = CONFIG;
