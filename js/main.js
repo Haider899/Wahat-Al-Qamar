@@ -2,6 +2,7 @@
  * WAHAT AL QAMAR — Motion & interactions
  */
 import CONFIG from '/config.js';
+import { TRANSLATIONS, t } from './i18n.js';
 
 // Make CONFIG globally available
 window.CONFIG = CONFIG;
@@ -12,7 +13,7 @@ const HERO_INTERVAL = 2600;
 
 /** Single hero background — your welding factory image */
 const HERO_BG = {
-  image: 'assets/hero/hero-welding-main.png?v=3',
+  image: 'assets/hero/hero-welding-main.png?v=4',
   imageAlt: 'Professional welder manufacturing trailer base in industrial factory',
 };
 
@@ -71,110 +72,30 @@ const HERO_SLIDES_AR = [
   },
 ];
 
-const TRANSLATIONS = {
-  en: {
-    'nav.home': 'Home',
-    'nav.about': 'About',
-    'nav.products': 'Products',
-    'nav.capabilities': 'Capabilities',
-    'nav.projects': 'Projects',
-    'nav.reviews': 'Reviews',
-    'nav.contact': 'Contact',
-    'nav.quote': 'Get Quote',
-    'hero.explore': 'Explore Products',
-    'hero.viewProjects': 'View Projects',
-    'hero.statYears': '+ Years Experience',
-    'hero.statDelivered': '+ Trailers Delivered',
-    'hero.statCategories': 'Trailer Categories',
-    'trust.label': 'Trusted across UAE & GCC',
-    'trust.flatbed': 'Flatbed Trailers',
-    'trust.lowbed': 'Lowbed Chassis',
-    'trust.aframe': 'A-Frame Trailers',
-    'trust.skeleton': 'Skeleton Trailers',
-    'trust.curtain': 'Curtain Side',
-    'trust.box': 'Box Trailers',
-    'trust.convertible': 'Convertible Lowbed',
-    'trust.custom': 'Custom Fabrication',
-    'tag.flatbed': 'Flatbed',
-    'gallery.flatbedChassisTitle': 'Flatbed Chassis Base',
-    'gallery.flatbedChassisDesc': 'High-durability trailer chassis with premium steel fabrication, ready for GCC routes.',
-    'reviews.label': 'Customer Reviews',
-    'reviews.title': 'Trusted by Heavy Transport Teams',
-    'reviews.desc': 'Feedback from fleet operators, contractors, and logistics teams who rely on WAHAT AL QAMAR trailer bases.',
-    'reviews.fmRole': 'Fleet Manager',
-    'reviews.fmCompany': 'Heavy Logistics, Dubai',
-    'reviews.fmQuote': '"The chassis build quality and delivery updates were excellent. The team understood our payload requirements and delivered a road-ready platform on schedule."',
-    'reviews.fmChip': 'Lowbed Fleet',
-    'reviews.cpRole': 'Construction Partner',
-    'reviews.cpCompany': 'Precast Transport, UAE',
-    'reviews.cpQuote': '"Strong welding, clean finishing, and practical engineering. Their workshop team helped us finalize custom dimensions without slowing the project timeline."',
-    'reviews.cpChip': 'Custom Fabrication',
-    'reviews.loRole': 'Logistics Operator',
-    'reviews.loCompany': 'GCC Route Operations',
-    'reviews.loQuote': '"The flatbed base performed well on demanding routes. Good communication, solid materials, and a professional handover from inspection to delivery."',
-    'reviews.loChip': 'Flatbed Base',
-    'reviews.metricResponse': 'Quote Response',
-    'reviews.metricQC': 'Before Delivery',
-    'reviews.metricBuilt': 'Built Locally',
-  },
-  ar: {
-    'nav.home': 'الرئيسية',
-    'nav.about': 'من نحن',
-    'nav.products': 'المنتجات',
-    'nav.capabilities': 'قدراتنا',
-    'nav.projects': 'مشاريعنا',
-    'nav.reviews': 'الآراء',
-    'nav.contact': 'اتصل بنا',
-    'nav.quote': 'طلب تسعيرة',
-    'hero.explore': 'اكتشف المنتجات',
-    'hero.viewProjects': 'عرض المشاريع',
-    'hero.statYears': '+ سنوات خبرة',
-    'hero.statDelivered': '+ مقطورة تم تسليمها',
-    'hero.statCategories': 'فئات المقطورات',
-    'trust.label': 'موضع ثقة في الإمارات والخليج',
-    'trust.flatbed': 'مقطورات مسطحة',
-    'trust.lowbed': 'شاسيه منخفض',
-    'trust.aframe': 'مقطورات A-Frame',
-    'trust.skeleton': 'مقطورات هيكلية',
-    'trust.curtain': 'مقطورات ذات جوانب ستائرية',
-    'trust.box': 'مقطورات صندوقية',
-    'trust.convertible': 'مقطورات منخفضة قابلة للتحويل',
-    'trust.custom': 'تصنيع حسب الطلب',
-    'tag.flatbed': 'مسطحة',
-    'gallery.flatbedChassisTitle': 'قاعدة شاسيه مقطورة مسطحة',
-    'gallery.flatbedChassisDesc': 'شاسيه مقطورة عالي المتانة مع تصنيع فولاذي ممتاز، جاهز للطرق في الخليج.',
-    'reviews.label': 'آراء العملاء',
-    'reviews.title': 'موضع ثقة فرق النقل الثقيل',
-    'reviews.desc': 'آراء مشغلي الأساطيل، والمقاولين، وفرق الخدمات اللوجستية الذين يعتمدون على قواعد مقطورات واحة القمر.',
-    'reviews.fmRole': 'مدير الأسطول',
-    'reviews.fmCompany': 'الخدمات اللوجستية الثقيلة، دبي',
-    'reviews.fmQuote': '"جودة تصنيع الشاسيه وتحديثات التسليم كانت ممتازة. تفهم الفريق متطلبات الحمولة لدينا وسلموا قاعدة جاهزة للطريق في الوقت المحدد."',
-    'reviews.fmChip': 'أسطول المقطورات المنخفضة',
-    'reviews.cpRole': 'شريك البناء',
-    'reviews.cpCompany': 'نقل الخرسانة الجاهزة، الإمارات',
-    'reviews.cpQuote': '"لحام قوي، تشطيب نظيف، وهندسة عملية. ساعدنا فريق الورشة في تحديد الأبعاد المخصصة دون إبطاء الجدول الزمني للمشروع."',
-    'reviews.cpChip': 'تصنيع مخصص',
-    'reviews.loRole': 'مشغل الخدمات اللوجستية',
-    'reviews.loCompany': 'عمليات مسارات الخليج',
-    'reviews.loQuote': '"قدمت القاعدة المسطحة أداءً ممتازاً في الطرق الصعبة. تواصل جيد، مواد متينة، وتسليم احترافي من الفحص إلى الشحن."',
-    'reviews.loChip': 'قاعدة مسطحة',
-    'reviews.metricResponse': 'الرد على التسعيرة',
-    'reviews.metricQC': 'فحص الجودة قبل التسليم',
-    'reviews.metricBuilt': 'صنع محلياً في الإمارات',
-  }
-};
-
 let currentLang = localStorage.getItem('wahatLang') || 'en';
 const getHeroSlides = () => (currentLang === 'ar' ? HERO_SLIDES_AR : HERO_SLIDES_EN);
 
 function updateTranslations() {
+  const dict = TRANSLATIONS[currentLang] || TRANSLATIONS.en;
+
   $$('[data-i18n]').forEach((el) => {
     const key = el.dataset.i18n;
-    const translation = TRANSLATIONS[currentLang]?.[key];
-    if (translation) {
+    const translation = dict[key];
+    if (!translation) return;
+    if ('i18nHtml' in el.dataset) {
+      el.innerHTML = translation;
+    } else {
       el.textContent = translation;
     }
   });
+
+  $$('[data-i18n-placeholder]').forEach((el) => {
+    const key = el.dataset.i18nPlaceholder;
+    const translation = dict[key];
+    if (translation) el.placeholder = translation;
+  });
+
+  if (dict['meta.title']) document.title = dict['meta.title'];
 
   document.documentElement.lang = currentLang;
   document.documentElement.dir = currentLang === 'ar' ? 'rtl' : 'ltr';
@@ -386,14 +307,14 @@ function initLoader() {
 
   /* 0 — show progress bar & step label instantly */
   tl.set([bar, stepEl], { opacity: 1 })
-    .call(() => setProgress(0, 'Loading chassis…'));
+    .call(() => setProgress(0, t(currentLang, 'loader.step0')));
 
   /* 1 — WHEELS fly in from bottom + rotate */
   tl.fromTo(wheels,
     { opacity: 0, y: 60, rotation: -20, transformOrigin: 'center center' },
     { opacity: 1, y: 0,  rotation: 0,   duration: 0.7, ease: 'back.out(1.7)' }
   )
-  .call(() => setProgress(20, 'Mounting axles…'));
+  .call(() => setProgress(20, t(currentLang, 'loader.step1')));
 
   /* 2 — LANDING GEAR drops from above */
   tl.fromTo(legs,
@@ -401,7 +322,7 @@ function initLoader() {
     { opacity: 1, y: 0,   scaleY: 1, duration: 0.6, ease: 'elastic.out(1, 0.6)' },
     '-=0.2'
   )
-  .call(() => setProgress(40, 'Attaching landing gear…'));
+  .call(() => setProgress(40, t(currentLang, 'loader.step2')));
 
   /* 3 — FRAME slides in from the right */
   tl.fromTo(frame,
@@ -409,7 +330,7 @@ function initLoader() {
     { opacity: 1, x: 0,  duration: 0.65, ease: 'power3.out' },
     '-=0.15'
   )
-  .call(() => setProgress(60, 'Welding main frame…'));
+  .call(() => setProgress(60, t(currentLang, 'loader.step3')));
 
   /* 4 — BED descends from above with a slam */
   tl.fromTo(bed,
@@ -417,7 +338,7 @@ function initLoader() {
     { opacity: 1, y: 0,   scaleY: 1,   duration: 0.55, ease: 'back.out(2)' },
     '-=0.1'
   )
-  .call(() => setProgress(75, 'Fitting cargo deck…'));
+  .call(() => setProgress(75, t(currentLang, 'loader.step4')));
 
   /* 5 — LASER SCAN sweeps across the assembled trailer */
   tl.to(scanner, { opacity: 1, duration: 0.2 })
@@ -427,7 +348,7 @@ function initLoader() {
     )
     .to(scanner, { opacity: 0, duration: 0.2 }, '-=0.1')
     .call(() => {
-      setProgress(88, 'Quality check…');
+      setProgress(88, t(currentLang, 'loader.step5'));
       /* small assembled glow flash */
       [wheels, legs, frame, bed].forEach(el => el?.classList.add('assembled'));
     });
@@ -455,7 +376,7 @@ function initLoader() {
 
   /* 9 — progress bar fills to 100 */
   tl.call(() => {
-    setProgress(100, 'Ready.');
+    setProgress(100, t(currentLang, 'loader.step6'));
     /* logo pulse after assembly */
     gsap.to(logo, { animation: 'none' });
     gsap.to(logo, {

@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="icon" href="assets/company-logo.png" type="image/png" />
-  <link rel="preload" href="assets/hero/hero-welding-main.png?v=3" as="image" fetchpriority="high" />
+  <link rel="preload" href="assets/hero/hero-welding-main.png?v=4" as="image" fetchpriority="high" />
   <link rel="stylesheet" href="css/main.css" />
 </head>
 <body>
@@ -115,9 +115,9 @@
       </div>
       <img src="assets/company-logo.png" alt="WAHAT AL QAMAR" class="loader-logo" width="140" height="140" />
       <span class="loader-brand">WAHAT AL QAMAR</span>
-      <span class="loader-tagline">Trailer Base Manufacturing · UAE</span>
+      <span class="loader-tagline" data-i18n="loader.tagline">Trailer Base Manufacturing · UAE</span>
       <div class="loader-bar"><span id="loaderBarFill"></span></div>
-      <span class="loader-step" id="loaderStep">Initializing…</span>
+      <span class="loader-step" id="loaderStep" data-i18n="loader.step0">Loading chassis…</span>
     </div>
   </div>
 
@@ -127,7 +127,7 @@
         <img src="assets/company-logo.png" alt="WAHAT AL QAMAR" class="logo-img" width="72" height="72" />
         <span class="logo-text">
           <strong>WAHAT AL QAMAR</strong>
-          <small>Turning Eng LLC · UAE</small>
+          <small data-i18n="brand.tagline">Turning Eng LLC · UAE</small>
         </span>
       </a>
       <nav class="main-nav" id="mainNav" aria-label="Primary">
@@ -186,7 +186,7 @@
         </div>
       </div>
       <div class="hero-scroll" aria-hidden="true">
-        <span>Scroll</span>
+        <span data-i18n="hero.scroll">Scroll</span>
         <div class="scroll-line"></div>
       </div>
     </section>
@@ -226,24 +226,24 @@
           </div>
           <div class="about-badge">
             <span>ISO</span>
-            <small>Quality Assured</small>
+            <small data-i18n="about.badge">Quality Assured</small>
           </div>
         </div>
         <div class="about-content">
-          <span class="section-label reveal-up">About Us</span>
-          <h2 class="section-title reveal-up">Leading Trailer Base Manufacturer in the UAE</h2>
-          <p class="reveal-up">
+          <span class="section-label reveal-up" data-i18n="about.label">About Us</span>
+          <h2 class="section-title reveal-up" data-i18n="about.title">Leading Trailer Base Manufacturer in the UAE</h2>
+          <p class="reveal-up" data-i18n="about.p1">
             WAHAT AL QAMAR is a Dubai-based manufacturer specializing in trailer bases, chassis assemblies, and complete trailer solutions for the construction, precast, oil & gas, and logistics sectors.
           </p>
-          <p class="reveal-up">
+          <p class="reveal-up" data-i18n="about.p2">
             Large enough to deliver volume production at competitive rates — yet agile enough to engineer bespoke designs, modify existing fleets, and prototype next-generation trailer platforms for your project.
           </p>
           <ul class="about-features reveal-up">
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12l5 5L20 7"/></svg> In-house fabrication & welding</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12l5 5L20 7"/></svg> ADR / GCC road-compliant builds</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12l5 5L20 7"/></svg> Rapid turnaround & after-sales support</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12l5 5L20 7"/></svg> <span data-i18n="about.feat1">In-house fabrication & welding</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12l5 5L20 7"/></svg> <span data-i18n="about.feat2">ADR / GCC road-compliant builds</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12l5 5L20 7"/></svg> <span data-i18n="about.feat3">Rapid turnaround & after-sales support</span></li>
           </ul>
-          <a href="#contact" class="btn btn-primary reveal-up">Partner With Us</a>
+          <a href="#contact" class="btn btn-primary reveal-up" data-i18n="about.cta">Partner With Us</a>
         </div>
       </div>
     </section>
@@ -252,9 +252,9 @@
     <section class="section products" id="products">
       <div class="container">
         <div class="section-header center">
-          <span class="section-label reveal-up">Our Products</span>
-          <h2 class="section-title reveal-up">Trailer Bases & Complete Solutions</h2>
-          <p class="section-desc reveal-up">Engineered for heavy loads, harsh climates, and demanding GCC logistics — from standard models to fully custom platforms.</p>
+          <span class="section-label reveal-up" data-i18n="products.label">Our Products</span>
+          <h2 class="section-title reveal-up" data-i18n="products.title">Trailer Bases & Complete Solutions</h2>
+          <p class="section-desc reveal-up" data-i18n="products.desc">Engineered for heavy loads, harsh climates, and demanding GCC logistics — from standard models to fully custom platforms.</p>
         </div>
         <div class="products-grid">
           <article class="product-card reveal-card" data-tilt>
@@ -263,9 +263,9 @@
               <span class="product-num">01</span>
             </div>
             <div class="product-body">
-              <h3>Flatbed Trailer Base</h3>
-              <p>Open-deck platforms for machinery, steel, pipes, and construction materials — crane and forklift loadable.</p>
-              <a href="#contact" class="product-link">Request specs →</a>
+              <h3 data-i18n="products.p1.title">Flatbed Trailer Base</h3>
+              <p data-i18n="products.p1.desc">Open-deck platforms for machinery, steel, pipes, and construction materials — crane and forklift loadable.</p>
+              <a href="#contact" class="product-link" data-i18n="products.link">Request specs →</a>
             </div>
           </article>
           <article class="product-card reveal-card" data-tilt>
@@ -274,9 +274,9 @@
               <span class="product-num">02</span>
             </div>
             <div class="product-body">
-              <h3>Lowbed & Hydraulic Ramps</h3>
-              <p>Ultra-low deck height for excavators, transformers, and precast elements — including convertible A-frame configurations.</p>
-              <a href="#contact" class="product-link">Request specs →</a>
+              <h3 data-i18n="products.p2.title">Lowbed & Hydraulic Ramps</h3>
+              <p data-i18n="products.p2.desc">Ultra-low deck height for excavators, transformers, and precast elements — including convertible A-frame configurations.</p>
+              <a href="#contact" class="product-link" data-i18n="products.link">Request specs →</a>
             </div>
           </article>
           <article class="product-card reveal-card" data-tilt>
@@ -285,9 +285,9 @@
               <span class="product-num">03</span>
             </div>
             <div class="product-body">
-              <h3>Cage Side Trailers</h3>
-              <p>Enclosed cage platforms for livestock, bulk cargo and secure GCC logistics — custom pillar and deck builds.</p>
-              <a href="#contact" class="product-link">Request specs →</a>
+              <h3 data-i18n="products.p3.title">Cage Side Trailers</h3>
+              <p data-i18n="products.p3.desc">Enclosed cage platforms for livestock, bulk cargo and secure GCC logistics — custom pillar and deck builds.</p>
+              <a href="#contact" class="product-link" data-i18n="products.link">Request specs →</a>
             </div>
           </article>
           <article class="product-card reveal-card" data-tilt>
@@ -296,9 +296,9 @@
               <span class="product-num">04</span>
             </div>
             <div class="product-body">
-              <h3>Chassis & Skeleton Base</h3>
-              <p>Main beam, axle, and wheel assemblies built to your tonnage and tandem requirements — container-ready chassis.</p>
-              <a href="#contact" class="product-link">Request specs →</a>
+              <h3 data-i18n="products.p4.title">Chassis & Skeleton Base</h3>
+              <p data-i18n="products.p4.desc">Main beam, axle, and wheel assemblies built to your tonnage and tandem requirements — container-ready chassis.</p>
+              <a href="#contact" class="product-link" data-i18n="products.link">Request specs →</a>
             </div>
           </article>
           <article class="product-card reveal-card" data-tilt>
@@ -307,9 +307,9 @@
               <span class="product-num">05</span>
             </div>
             <div class="product-body">
-              <h3>Heavy Cage Trailers</h3>
-              <p>Dual-axle cage bodies with reinforced decks — built for industrial yards and long-haul GCC routes.</p>
-              <a href="#contact" class="product-link">Request specs →</a>
+              <h3 data-i18n="products.p5.title">Heavy Cage Trailers</h3>
+              <p data-i18n="products.p5.desc">Dual-axle cage bodies with reinforced decks — built for industrial yards and long-haul GCC routes.</p>
+              <a href="#contact" class="product-link" data-i18n="products.link">Request specs →</a>
             </div>
           </article>
           <article class="product-card reveal-card" data-tilt>
@@ -318,9 +318,9 @@
               <span class="product-num">06</span>
             </div>
             <div class="product-body">
-              <h3>Fleet & Volume Production</h3>
-              <p>Stacked chassis assembly lines — export-ready flatbed and lowbed fleets delivered on your timeline.</p>
-              <a href="#contact" class="product-link">Request specs →</a>
+              <h3 data-i18n="products.p6.title">Fleet & Volume Production</h3>
+              <p data-i18n="products.p6.desc">Stacked chassis assembly lines — export-ready flatbed and lowbed fleets delivered on your timeline.</p>
+              <a href="#contact" class="product-link" data-i18n="products.link">Request specs →</a>
             </div>
           </article>
         </div>
@@ -334,29 +334,29 @@
       </div>
       <div class="container">
         <div class="section-header">
-          <span class="section-label reveal-up">Capabilities</span>
-          <h2 class="section-title reveal-up">End-to-End Manufacturing</h2>
+          <span class="section-label reveal-up" data-i18n="capabilities.label">Capabilities</span>
+          <h2 class="section-title reveal-up" data-i18n="capabilities.title">End-to-End Manufacturing</h2>
         </div>
         <div class="capabilities-grid">
           <div class="cap-card reveal-card">
             <div class="cap-icon">⚙</div>
-            <h3>Chassis & Base Fabrication</h3>
-            <p>High-grade steel main beams, cross members, and landing gear — CNC-cut and precision-welded in our UAE facility.</p>
+            <h3 data-i18n="capabilities.c1.title">Chassis & Base Fabrication</h3>
+            <p data-i18n="capabilities.c1.desc">High-grade steel main beams, cross members, and landing gear — CNC-cut and precision-welded in our UAE facility.</p>
           </div>
           <div class="cap-card reveal-card">
             <div class="cap-icon">🔧</div>
-            <h3>Custom Engineering</h3>
-            <p>Bespoke axle spreads, kingpin positions, and payload ratings tailored to your fleet and route permits.</p>
+            <h3 data-i18n="capabilities.c2.title">Custom Engineering</h3>
+            <p data-i18n="capabilities.c2.desc">Bespoke axle spreads, kingpin positions, and payload ratings tailored to your fleet and route permits.</p>
           </div>
           <div class="cap-card reveal-card">
             <div class="cap-icon">✓</div>
-            <h3>Quality Inspection</h3>
-            <p>Magnetic particle testing, dimensional checks, and road-test validation before delivery.</p>
+            <h3 data-i18n="capabilities.c3.title">Quality Inspection</h3>
+            <p data-i18n="capabilities.c3.desc">Magnetic particle testing, dimensional checks, and road-test validation before delivery.</p>
           </div>
           <div class="cap-card reveal-card">
             <div class="cap-icon">🚛</div>
-            <h3>Fleet Refurbishment</h3>
-            <p>Extend the life of used trailers with structural upgrades, new decks, and compliance modifications.</p>
+            <h3 data-i18n="capabilities.c4.title">Fleet Refurbishment</h3>
+            <p data-i18n="capabilities.c4.desc">Extend the life of used trailers with structural upgrades, new decks, and compliance modifications.</p>
           </div>
         </div>
       </div>
@@ -366,65 +366,65 @@
     <section class="section projects" id="projects">
       <div class="container">
         <div class="section-header center">
-          <span class="section-label reveal-up">Projects</span>
-          <h2 class="section-title reveal-up">Built for Industry Leaders</h2>
-          <p class="section-desc reveal-up">Recent collaborations across precast, construction, and heavy logistics in the UAE.</p>
+          <span class="section-label reveal-up" data-i18n="projects.label">Projects</span>
+          <h2 class="section-title reveal-up" data-i18n="projects.title">Built for Industry Leaders</h2>
+          <p class="section-desc reveal-up" data-i18n="projects.desc">Recent collaborations across precast, construction, and heavy logistics in the UAE.</p>
         </div>
         <div class="projects-filter reveal-up">
-          <button class="filter-btn active" data-filter="all">All</button>
-          <button class="filter-btn" data-filter="lowbed">Lowbed</button>
-          <button class="filter-btn" data-filter="aframe">A-Frame</button>
-          <button class="filter-btn" data-filter="flatbed">Flatbed</button>
-          <button class="filter-btn" data-filter="cage">Cage</button>
-          <button class="filter-btn" data-filter="chassis">Chassis</button>
+          <button class="filter-btn active" data-filter="all" data-i18n="filter.all">All</button>
+          <button class="filter-btn" data-filter="lowbed" data-i18n="filter.lowbed">Lowbed</button>
+          <button class="filter-btn" data-filter="aframe" data-i18n="filter.aframe">A-Frame</button>
+          <button class="filter-btn" data-filter="flatbed" data-i18n="filter.flatbed">Flatbed</button>
+          <button class="filter-btn" data-filter="cage" data-i18n="filter.cage">Cage</button>
+          <button class="filter-btn" data-filter="chassis" data-i18n="filter.chassis">Chassis</button>
         </div>
         <div class="projects-gallery">
           <figure class="gallery-item reveal-card large" data-category="lowbed">
             <img src="assets/lowbed-hydraulic-ramps-new.jpg" alt="Lowbed trailer with hydraulic ramps" loading="lazy" class="img-enhanced" />
             <figcaption>
-              <span class="tag">Lowbed</span>
-              <h3>Hydraulic Lowbed Platform</h3>
-              <p>Multi-axle lowbed with rear ramps — heavy plant and machinery ready.</p>
+              <span class="tag" data-i18n="tag.lowbed">Lowbed</span>
+              <h3 data-i18n="gallery.g1.title">Hydraulic Lowbed Platform</h3>
+              <p data-i18n="gallery.g1.desc">Multi-axle lowbed with rear ramps — heavy plant and machinery ready.</p>
             </figcaption>
           </figure>
           <figure class="gallery-item reveal-card" data-category="cage">
             <img src="assets/product-cage-white.png" alt="White cage-side trailer" loading="lazy" class="img-enhanced" />
             <figcaption>
-              <span class="tag">Cage</span>
-              <h3>White Cage-Side Trailer</h3>
-              <p>Custom cage body with reinforced red pillars — export finish.</p>
+              <span class="tag" data-i18n="tag.cage">Cage</span>
+              <h3 data-i18n="gallery.g2.title">White Cage-Side Trailer</h3>
+              <p data-i18n="gallery.g2.desc">Custom cage body with reinforced red pillars — export finish.</p>
             </figcaption>
           </figure>
           <figure class="gallery-item reveal-card" data-category="flatbed">
             <img src="assets/flatbed-white-midland.jpg" alt="White flatbed trailer with hydraulic ramps" loading="lazy" class="img-enhanced" />
             <figcaption>
-              <span class="tag">Flatbed</span>
-              <h3>Road-Ready Flatbed Fleet</h3>
-              <p>Premium flatbed trailers delivered for GCC heavy logistics routes.</p>
+              <span class="tag" data-i18n="tag.flatbed">Flatbed</span>
+              <h3 data-i18n="gallery.g3.title">Road-Ready Flatbed Fleet</h3>
+              <p data-i18n="gallery.g3.desc">Premium flatbed trailers delivered for GCC heavy logistics routes.</p>
             </figcaption>
           </figure>
           <figure class="gallery-item reveal-card" data-category="cage">
             <img src="assets/product-cage-blue.png" alt="Blue cage trailer production" loading="lazy" class="img-enhanced" />
             <figcaption>
-              <span class="tag">Cage</span>
-              <h3>Blue Cage Production Line</h3>
-              <p>In-bay assembly with landing gear — fresh paint and QC.</p>
+              <span class="tag" data-i18n="tag.cage">Cage</span>
+              <h3 data-i18n="gallery.g4.title">Blue Cage Production Line</h3>
+              <p data-i18n="gallery.g4.desc">In-bay assembly with landing gear — fresh paint and QC.</p>
             </figcaption>
           </figure>
           <figure class="gallery-item reveal-card" data-category="chassis">
             <img src="assets/chassis-under.png" alt="Chassis understructure engineering" loading="lazy" class="img-enhanced" />
             <figcaption>
-              <span class="tag">Chassis</span>
-              <h3>Base Frame Engineering</h3>
-              <p>Kingpin, cross-members and axle layout — built to payload spec.</p>
+              <span class="tag" data-i18n="tag.chassis">Chassis</span>
+              <h3 data-i18n="gallery.g5.title">Base Frame Engineering</h3>
+              <p data-i18n="gallery.g5.desc">Kingpin, cross-members and axle layout — built to payload spec.</p>
             </figcaption>
           </figure>
           <figure class="gallery-item reveal-card wide" data-category="flatbed">
             <img src="assets/flatbed-white-midland.jpg" alt="White flatbed trailer with hydraulic ramps" loading="lazy" class="img-enhanced" />
             <figcaption>
-              <span class="tag">Flatbed</span>
-              <h3>Premium Flatbed Fleet</h3>
-              <p>Professional heavy-duty flatbed trailers ready for industrial transport across GCC.</p>
+              <span class="tag" data-i18n="tag.flatbed">Flatbed</span>
+              <h3 data-i18n="gallery.g6.title">Premium Flatbed Fleet</h3>
+              <p data-i18n="gallery.g6.desc">Professional heavy-duty flatbed trailers ready for industrial transport across GCC.</p>
             </figcaption>
           </figure>
           <figure class="gallery-item reveal-card" data-category="flatbed">
@@ -438,9 +438,9 @@
           <figure class="gallery-item reveal-card" data-category="chassis">
             <img src="assets/factory-production.png" alt="UAE factory production line" loading="lazy" class="img-enhanced" />
             <figcaption>
-              <span class="tag">Production</span>
-              <h3>Factory Batch Build</h3>
-              <p>Stacked yellow chassis — volume delivery for fleet orders.</p>
+              <span class="tag" data-i18n="tag.production">Production</span>
+              <h3 data-i18n="gallery.g8.title">Factory Batch Build</h3>
+              <p data-i18n="gallery.g8.desc">Stacked yellow chassis — volume delivery for fleet orders.</p>
             </figcaption>
           </figure>
         </div>
@@ -521,9 +521,9 @@
     <!-- CTA BAND -->
     <section class="cta-band">
       <div class="container cta-inner reveal-up">
-        <h2>Ready to build your next trailer base?</h2>
-        <p>Share your payload, dimensions, and timeline — our engineers respond within 24 hours.</p>
-        <a href="#contact" class="btn btn-light">Start Your Project</a>
+        <h2 data-i18n="cta.title">Ready to build your next trailer base?</h2>
+        <p data-i18n="cta.desc">Share your payload, dimensions, and timeline — our engineers respond within 24 hours.</p>
+        <a href="#contact" class="btn btn-light" data-i18n="cta.btn">Start Your Project</a>
       </div>
     </section>
 
@@ -531,15 +531,15 @@
     <section class="section contact" id="contact">
       <div class="container contact-grid">
         <div class="contact-info">
-          <span class="section-label reveal-up">Contact</span>
-          <h2 class="section-title reveal-up">Let's Engineer Your Solution</h2>
+          <span class="section-label reveal-up" data-i18n="contact.label">Contact</span>
+          <h2 class="section-title reveal-up" data-i18n="contact.title">Let's Engineer Your Solution</h2>
           <div class="contact-details reveal-up">
             <div class="contact-item">
-              <span class="label">Location</span>
-              <p>Industrial Area, Jebel Ali<br />Dubai, United Arab Emirates</p>
+              <span class="label" data-i18n="contact.locationLabel">Location</span>
+              <p data-i18n="contact.location" data-i18n-html>Industrial Area, Jebel Ali<br />Dubai, United Arab Emirates</p>
             </div>
             <div class="contact-item">
-              <span class="label">Phone</span>
+              <span class="label" data-i18n="contact.phoneLabel">Phone</span>
               <p>
                 <a href="tel:+971555187486" class="contact-line">
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
@@ -550,7 +550,7 @@
               </p>
             </div>
             <div class="contact-item">
-              <span class="label">Email</span>
+              <span class="label" data-i18n="contact.emailLabel">Email</span>
               <p>
                 <a href="mailto:Wahatalqamartrailers@gmail.com" class="contact-line">
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
@@ -562,7 +562,7 @@
               </p>
             </div>
             <div class="contact-item">
-              <span class="label">Quick Contact</span>
+              <span class="label" data-i18n="contact.quickLabel">Quick Contact</span>
               <div class="contact-icons">
                 <a href="https://wa.me/971555187486?text=Hello%20WAHAT%20AL-QAMAR,%20I'm%20interested%20in%20learning%20more%20about%20your%20trailer%20manufacturing%20services." 
                    target="_blank" 
@@ -586,51 +586,51 @@
               </div>
             </div>
             <div class="contact-item">
-              <span class="label">Hours</span>
-              <p>Sun – Thu: 8:00 AM – 6:00 PM<br />Sat: 9:00 AM – 2:00 PM</p>
+              <span class="label" data-i18n="contact.hoursLabel">Hours</span>
+              <p data-i18n="contact.hours" data-i18n-html>Sun – Thu: 8:00 AM – 6:00 PM<br />Sat: 9:00 AM – 2:00 PM</p>
             </div>
           </div>
         </div>
         <form class="contact-form reveal-up" id="contactForm">
           <div class="form-row">
             <label>
-              <span>Full Name</span>
-              <input type="text" name="name" required placeholder="Your name" />
+              <span data-i18n="form.name">Full Name</span>
+              <input type="text" name="name" required data-i18n-placeholder="form.ph.name" placeholder="Your name" />
             </label>
             <label>
-              <span>Company</span>
-              <input type="text" name="company" placeholder="Company name" />
+              <span data-i18n="form.company">Company</span>
+              <input type="text" name="company" data-i18n-placeholder="form.ph.company" placeholder="Company name" />
             </label>
           </div>
           <div class="form-row">
             <label>
-              <span>Email</span>
-              <input type="email" name="email" required placeholder="you@company.ae" />
+              <span data-i18n="form.email">Email</span>
+              <input type="email" name="email" required data-i18n-placeholder="form.ph.email" placeholder="you@company.ae" />
             </label>
             <label>
-              <span>Phone</span>
-              <input type="tel" name="phone" placeholder="+971 50 000 0000" />
+              <span data-i18n="form.phone">Phone</span>
+              <input type="tel" name="phone" data-i18n-placeholder="form.ph.phone" placeholder="+971 50 000 0000" />
             </label>
           </div>
           <label>
-            <span>Trailer Type</span>
+            <span data-i18n="form.trailerType">Trailer Type</span>
             <select name="type">
-              <option value="">Select product interest</option>
-              <option>Flatbed Trailer</option>
-              <option>Lowbed / Convertible Lowbed</option>
-              <option>A-Frame Trailer</option>
-              <option>Skeleton Trailer</option>
-              <option>Curtain Side Trailer</option>
-              <option>Box Trailer</option>
-              <option>Custom / Other</option>
+              <option value="" data-i18n="form.opt.default">Select product interest</option>
+              <option data-i18n="form.opt.flatbed">Flatbed Trailer</option>
+              <option data-i18n="form.opt.lowbed">Lowbed / Convertible Lowbed</option>
+              <option data-i18n="form.opt.aframe">A-Frame Trailer</option>
+              <option data-i18n="form.opt.skeleton">Skeleton Trailer</option>
+              <option data-i18n="form.opt.curtain">Curtain Side Trailer</option>
+              <option data-i18n="form.opt.box">Box Trailer</option>
+              <option data-i18n="form.opt.custom">Custom / Other</option>
             </select>
           </label>
           <label>
-            <span>Message</span>
-            <textarea name="message" rows="4" required placeholder="Payload, dimensions, quantity, timeline..."></textarea>
+            <span data-i18n="form.message">Message</span>
+            <textarea name="message" rows="4" required data-i18n-placeholder="form.ph.message" placeholder="Payload, dimensions, quantity, timeline..."></textarea>
           </label>
-          <button type="submit" class="btn btn-primary btn-full">Send Inquiry</button>
-          <p class="form-note">We respect your privacy. Your details are used only to respond to your inquiry.</p>
+          <button type="submit" class="btn btn-primary btn-full" data-i18n="form.send">Send Inquiry</button>
+          <p class="form-note" data-i18n="form.note">We respect your privacy. Your details are used only to respond to your inquiry.</p>
         </form>
       </div>
     </section>
@@ -641,35 +641,35 @@
       <div class="footer-brand">
         <a href="#home" class="logo">
           <img src="assets/company-logo.png" alt="WAHAT AL QAMAR" class="logo-img" width="72" height="72" />
-          <span class="logo-text"><strong>WAHAT AL QAMAR</strong><small>Turning Eng LLC · UAE</small></span>
+          <span class="logo-text"><strong>WAHAT AL QAMAR</strong><small data-i18n="brand.tagline">Turning Eng LLC · UAE</small></span>
         </a>
-        <p>Premium trailer bases and chassis solutions engineered in Dubai for the GCC and beyond.</p>
+        <p data-i18n="footer.desc">Premium trailer bases and chassis solutions engineered in Dubai for the GCC and beyond.</p>
       </div>
       <div class="footer-links">
-        <h4>Quick Links</h4>
-        <a href="#about">About</a>
-        <a href="#products">Products</a>
-        <a href="#projects">Projects</a>
-        <a href="#reviews">Reviews</a>
-        <a href="#contact">Contact</a>
+        <h4 data-i18n="footer.quickLinks">Quick Links</h4>
+        <a href="#about" data-i18n="nav.about">About</a>
+        <a href="#products" data-i18n="nav.products">Products</a>
+        <a href="#projects" data-i18n="nav.projects">Projects</a>
+        <a href="#reviews" data-i18n="nav.reviews">Reviews</a>
+        <a href="#contact" data-i18n="nav.contact">Contact</a>
       </div>
       <div class="footer-links">
-        <h4>Products</h4>
-        <a href="#products">Flatbed</a>
-        <a href="#products">Lowbed</a>
-        <a href="#products">A-Frame</a>
-        <a href="#products">Skeleton</a>
+        <h4 data-i18n="footer.products">Products</h4>
+        <a href="#products" data-i18n="trust.flatbed">Flatbed</a>
+        <a href="#products" data-i18n="filter.lowbed">Lowbed</a>
+        <a href="#products" data-i18n="filter.aframe">A-Frame</a>
+        <a href="#products" data-i18n="trust.skeleton">Skeleton</a>
       </div>
       <div class="footer-contact">
-        <h4>Reach Us</h4>
-        <p>Jebel Ali, Dubai, UAE</p>
+        <h4 data-i18n="footer.reachUs">Reach Us</h4>
+        <p data-i18n="footer.location">Jebel Ali, Dubai, UAE</p>
         <p><a href="tel:+971555187486">+971 55 518 7486</a></p>
         <p><a href="mailto:Wahatalqamartrailers@gmail.com">Wahatalqamartrailers@gmail.com</a></p>
       </div>
     </div>
     <div class="footer-bottom container">
-      <p>© <span id="year"></span> WAHAT AL QAMAR. All rights reserved.</p>
-      <p class="footer-ar">واحة القمر — تصنيع قواعد المقطورات</p>
+      <p>© <span id="year"></span> WAHAT AL QAMAR. <span data-i18n="footer.copyright">All rights reserved.</span></p>
+      <p class="footer-ar" data-i18n="footer.ar">واحة القمر — تصنيع قواعد المقطورات</p>
     </div>
   </footer>
 
